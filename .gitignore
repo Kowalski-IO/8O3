@@ -3,3 +3,7 @@
 .settings
 activemq-data
 target
+src/main/resources/.DS_Store
+src/main/java/io/kowalski/ozone/Alpha.java
+src/main/java/io/kowalski/ozone/Beta.java
+src/main/java/io/kowalski/ozone/Gamma.java
