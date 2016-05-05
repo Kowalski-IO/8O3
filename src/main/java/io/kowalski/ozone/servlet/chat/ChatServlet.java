@@ -1,4 +1,4 @@
-package io.kowalski.ozone.servlet;
+package io.kowalski.ozone.servlet.chat;
 
 import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;

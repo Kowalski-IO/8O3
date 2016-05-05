@@ -2,7 +2,7 @@ package io.kowalski.ozone.guice;
 
 import com.google.inject.servlet.ServletModule;
 
-import io.kowalski.ozone.servlet.ChatServlet;
+import io.kowalski.ozone.servlet.chat.ChatServlet;
 
 public class OzoneServletModule extends ServletModule {
 

@@ -10,8 +10,7 @@
 	<network>
 		<join>
 			<tcp-ip enabled="true">
-				<member>10.0.1.100</member>
-				<member>10.0.1.122</member>
+				<member>*</member>
 			</tcp-ip>
 		</join>
 		<port auto-increment="true" port-count="100">5701</port>
@@ -19,7 +18,7 @@
 			<ports>0</ports>
 		</outbound-ports>
 		<interfaces enabled="false">
-			<interface>10.10.1.*</interface>
+			<interface>*</interface>
 		</interfaces>
 	</network>
 </hazelcast>

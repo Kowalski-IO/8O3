@@ -1,4 +1,4 @@
-package io.kowalski.ozone.servlet;
+package io.kowalski.ozone.servlet.chat;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -39,7 +39,7 @@ public class ChatSocket {
     }
 
     @OnWebSocketClose
-    public void onClose(final int statusCode, final String reason) {
+    public void onClose(final Session session, final int statusCode, final String reason) {
         System.out.println("Close: " + reason);
     }
 

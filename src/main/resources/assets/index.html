@@ -1,29 +1,28 @@
-<h1>Ozone</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<script type="text/javascript">
-var socket;
+<title>Ozone</title>
+</head>
 
-var connect = function(token) {
-        var url = 'ws://' + location.hostname + (location.port ? ':' + location.port: '') + '/chat?token=' + token;
-        socket = new WebSocket(url);
-        socket.onopen = function() {
-            console.log("Connection Opened");
-        }
-        socket.onclose = function() {
-            console.log("Connection Closed");
-        }
-        socket.onmessage = function(evt) {
-            console.log(evt.data);
-        }  
-}
+<body>
+	<h1>Ozone</h1>
+	
+	<div class="message">
+	   <h1>messages</h1>
+	
+	</div>
 
-    var sendMessage = function(recipient, sender, message) {
-        var message = {
-                recipient: recipient,
-                sender: sender,
-                message, message
-        }
-        socket.send(JSON.stringify(message));
-    }
-    
-</script>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"
+		integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+		crossorigin="anonymous"></script>
+	<script src="ozone.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

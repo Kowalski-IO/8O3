@@ -5,7 +5,6 @@
 	<groupId>io.kowalski</groupId>
 	<artifactId>ozone</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<name>Ozone</name>
 
@@ -119,7 +118,7 @@
 									implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>io.kowalski.ozone.Beta</mainClass>
+									<mainClass>io.kowalski.ozone.App</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
